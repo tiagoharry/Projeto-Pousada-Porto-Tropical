@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 10rem 0 10rem;
+    background-color: white;
+}
+
+.formulario__container{
+    background-color: rgb(220, 230, 236);
+    padding:2rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.formulario__container h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    padding-bottom: 1rem;
+    color:dimgray;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.input-field{
+    position: relative;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+}
+
+.input--nome{
+    grid-column: spam 2;
+}
+
+.input--email{
+    grid-column: spam 2;
+}
+
+.input--telefone{
+    grid-column: spam 2;
+}
+
+.input--cidade{
+    grid-column: spam 2;
+}
+
+form label{
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    padding-bottom: 0.2rem;
+
+}
+
+form{
+    align-items: center;
+}
+
+.input-field input textarea{
+    width: 100%;
+    padding-left: 5rem;
+}
+
+.input__principal{
+    padding:0.5rem 5rem;
+}
+
+#quantidadeCrianca, #quantidadeAdulto, #checkin, #checkout{
+    padding: 0.5rem 0.1rem;
+}
+
+.lista{
+    padding:2rem 15rem 5rem 15rem;
+    align-items: center;
+    background-color: white;
+}
+
+.lista h6{
+    font-size: 15px;
+    font-weight:900;
+    color: rgb(97, 95, 95);
+}

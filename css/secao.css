@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap');
+
+
+.secao{
+    padding: 3rem 10rem;
+    display: flex;
+    background-color: white;
+}
+
+.secao .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.secao__container{
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 7px solid red;
+    border-radius: 5px;
+    box-shadow: 2px 5px 8px -6px #000;
+    width: 26%;
+    height: 12rem;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.secao__titulo{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.secao__imagem{
+    width: 12%;
+    padding: 0.5rem 0;
+}
+
+.secao__texto{
+    font-size: 13px;
+    font-weight: lighter;
+    color: rgb(97, 96, 96);
+}
+
+@media screen and (min-width: 0px) {
+    .secao{
+        justify-content: center;
+    }
+
+    .secao .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .secao__container{
+        width:11.2rem;
+        height: 11.2rem;
+    }
+
+    .secao__imagem{
+        width: 20%;
+    }
+
+.secao__titulo{
+    padding-bottom: 0.5rem;
+}
+}
+
+@media screen and (min-width: 768px) {
+
+    .secao .container{
+     
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .secao__container{
+        width: 13rem;
+        height: 13rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .secao__container{
+        width: 20rem;
+        height: 14rem;
+    }
+
+    .secao__titulo{
+        font-size: 18px;
+    }
+
+    .secao__texto{
+        font-size: 15px;
+    }
+}

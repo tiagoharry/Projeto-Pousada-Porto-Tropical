@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Pousada Porto Tropical</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/formulario.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <button class="cabecalho__menu" aria-label="menu"><i></i></button>
+        <img class="cabecalho__logo" src="./Fotos/logo.png" alt="logo da pousada">
+        <nav class="menu">
+            <a class="menu__link" href="index.html">home</a>
+            <a class="menu__link" href="apousada.html">a pousada</a>
+            <a class="menu__link" href="">passeios</a>
+            <a class="menu__link" href="">fotos</a>
+            <a class="menu__link" href="contato.html">contato</a>
+        </nav>
+    </header>
+    <nav class="menu-lateral">
+        <a class="menu-lateral__link" href="index.html">home</a>
+        <a class="menu-lateral__link" href="apousada.html">a pousada</a>
+        <a class="menu-lateral__link" href="">passeios</a>
+        <a class="menu-lateral__link" href="">fotos</a>
+        <a class="menu-lateral__link" href="contato.html">contato</a>
+    </nav>
+<main>
+    <section class="formulario">
+        <div class="formulario__container">
+            <h2>Contato</h2>
+
+            <form action=""  class="formulario__form">
+                <div class="input-field  input--nome">
+                    <label for="nomesobrenome">Nome e sobrenome</label>
+                    <input type="text" id="nomesobrenome" class="input__principal" placeholder="digite o seu nome e sobrenome" required>
+                </div>
+
+                <div class="input-field input--email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input__principal" placeholder="seuemail@email.com" required>
+                </div>
+
+                <div class="input-field input--telefone">
+                    <label for="telefone" >Telefone</label>
+                    <input type="phone" id="telefone" class="input__principal" placeholder="(xx)xxxx-xxxx" required>
+                </div>
+                <div class="input-field input--cidade">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" class="input__principal" required> 
+                </div>
+
+                <div class="input-field">
+                    <label for="checkin">Check-in</label>
+                    <input type="date" id="checkin" class="input__principal" placeholder="00/00/00" required>
+                </div>
+                <div class="input-field">
+                    <label for="checkout">Check-out</label>
+                    <input type="date" id="checkout" class="input__principal" placeholder="00/00/00" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="quantidadeAdulto">Quantidade adulto</label>
+                    <input type="number" id="quantidadeAdulto" class="input__principal" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="quantidadeCrianca">Quantidade criança</label>
+                    <input type="number" id="quantidadeCrianca" class="input__principal">
+                </div>
+
+                <div class="input-field">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="" id="mensagem" class="input__principal" cols="30" rows="10"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+        </div>
+    </section>
+
+    <div class="lista">
+        <h6>Check-in: apartir das 14:00h e Check-out: 12:00(meio-dia)</h6>
+        <ul>
+            <li>- Não cobramos taxa de serviços. - Café da Manhã cortesia.</li>
+            <li>OBS.: Para o CANCELAMENTO da (as) Reserva (as), o hóspede deverá informar a Pousada, através de e-mail ou por carta enviada via fax, seguindo algumas regras:</li>
+            <li>* Cancelamentos somente com mínimo de 15 (Quinze) dias de antecedência.</li>
+            <li>* Caso o hóspede quebre as regras o dinheiro da reserva NÃO será devolvido para o mesmo.</li>
+            <li>* Caso o hóspede efetue o cancelamento no tempo determinado pela Pousada, o mesmo será devolvido através de crédito para nova hospedagem. (Crédito máximo 90 dias).</li>
+        </ul>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="row">
+            <div class="footer__col">
+                <h4 class="footer__titulo secao__redesSociais">Redes Sociais</h4>
+                <div class="social__links">
+                    <a href="https://www.facebook.com/Pousada-Porto-Tropical-202893283104758/?ref=tn_tnmn"><img src="./Fotos/001-facebook.png" alt="link facebook"></a>
+                    <a href="https://twitter.com/portotropical"><img src="./Fotos/002-twitter.png" alt="link twitter"></a>
+                    <a href="https://www.instagram.com/portotropical/"><img src="./Fotos/003-instagram.png" alt="link instagram"></a>
+                    <a href="https://pt.foursquare.com/v/pousada-porto-tropical/4c018c05716bc9b69013bc55"><img src="./Fotos/004-foursquare.png" alt="link foursquare"></a>
+                </div>
+            </div>
+
+
+            <div class="footer__col">
+                <h4 class="footer__titulo secao__contato">Contato</h4>
+                    <ul>
+                        <li><p class="footer__secao__texto">Porto Tropical</p></li>
+                        <li><p class="footer__secao__texto">Loteamento MEREPE 3</p></li>
+                        <li><p class="footer__secao__texto">Quadra 6 Lote 1</p></li>
+                        <li><p class="footer__secao__texto">Porto de Galinhas, Ipojuca - PE</p></li>
+                        <li><P class="footer__secao__texto">Fone: +55 81 3552-1646<br>Fone: +55 81 99786-9528</P></li>
+                        <li><p class="footer__secao__texto">contato@portotropical.com.br</p></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+    <section>
+    <div class="rodape">
+    <p class="copyright">&copy; Porto Tropical - 2022</p>
+    <img class="footer__bandeira" src="./Fotos/bandeiras.gif" alt="">
+        </div>
+        </section>
+</footer>
+
+<script src="menu.js"></script>
+</body>
+</html>

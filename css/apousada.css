@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+.pousada{
+    background-color: white;
+    padding: 5rem 5rem;
+}
+
+.pousada .container{
+    display: flex;
+}
+
+.pousada__sobre{
+    padding: 0 5rem;
+}
+
+.pousada__titulo{
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 1rem;
+
+}
+
+.pousada__texto{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+
+}
+
+.pousada .container img{
+    border-radius: 7px;
+}
+
+@media screen and (min-width:0px){
+    
+
+    .pousada{
+        padding: 2rem 2rem;
+    }
+
+    .pousada .container{
+        flex-direction: column;
+    }
+
+    .pousada__sobre{
+        padding: 0 0 0 0;
+    }
+
+    .pousada .container img{
+        width: 100%;
+        margin-top: 2rem;
+        
+    }
+   
+}
+
+@media screen and (min-width: 768px){
+    
+    .pousada{
+        padding: 4rem 4rem;
+    }
+    
+    .pousada .container{
+        flex-direction: initial;
+    }
+
+    .pousada__titulo{
+        font-size: 30px;
+    }
+
+    .pousada__texto{
+        font-size: 21px;
+    }
+
+    .pousada .container img{
+        width: 70%;
+        height: 20%;
+        padding-top: 0;
+        margin-left: 2rem;
+    }
+}

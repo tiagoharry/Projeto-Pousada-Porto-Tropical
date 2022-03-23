@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto&display=swap');
+
+
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(220, 230, 236);
+   
+}
+
+.cabecalho__logo{
+    width: 25%;
+}
+
+.menu__link{
+    text-decoration: none;
+    padding: 0 0.5rem;
+    text-transform: uppercase;
+    font-size: 15.5px;
+    font-family: 'Oswald', sans-serif;
+    color:dimgray;
+    transition: 0.5s all ease;
+}
+
+.menu__link:hover{
+    color:darkcyan;
+}
+
+
+.imagem__principal{
+    width: 100%;
+    padding-bottom: 3rem;
+}
+
+@media screen and (min-width:0px) {
+    
+    .cabecalho{
+       align-items: center;
+       padding: 1rem;
+        
+    }
+
+    .cabecalho__logo{
+        width: 60%;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .cabecalho__menu{
+        border: none;
+        background: none;
+    }
+
+    .cabecalho__menu i::before{
+        content:"\e904";
+        font-family: "icones";
+        font-size: 24px;
+    }
+
+    .menu-lateral{
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+        height: 100vw;
+        position: absolute;
+        background-color: rgb(220, 230, 236);
+        transition: .25s;
+        left: -100vw;
+    }
+
+    .menu-lateral--ativo{
+        left: 0;
+        transition: .25s;
+    }
+
+    .menu-lateral__link{
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        color:dimgray;
+        font-size: 1.1em;
+        height: 64px;
+        padding-left: 50px;
+        display: flex;
+        align-items: center;
+    }
+    
+   .imagem__principal{
+       padding-bottom: 0;
+    }
+    
+}
+
+@media screen and (min-width:720px) {
+
+    .cabecalho{
+        flex-direction: initial;
+        padding: 1.5rem 6rem;
+    }
+
+    .menu{
+        display: initial;
+    }
+
+    .cabecalho__logo{
+        padding-bottom: 0;
+        width: 25%;
+    }
+
+    .cabecalho__menu{
+        display: none;
+    }
+
+    .menu-lateral{
+        display: none;
+    }
+    
+}
